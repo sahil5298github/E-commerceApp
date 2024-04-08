@@ -25,7 +25,7 @@ public class ViewAllProducts {
 				prod.setQuantity(rs.getInt(5));
 
 				System.out.println(prod);
-				System.out.println("\n");
+				System.out.println();
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
