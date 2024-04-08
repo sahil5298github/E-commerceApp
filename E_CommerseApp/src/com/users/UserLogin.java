@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.db.connections.DbConnection;
+import com.products.ViewAllProducts;
 
 public class UserLogin {
 	Connection conn = null;
@@ -25,6 +26,8 @@ public class UserLogin {
 				String pass = rs.getString("pass");
 				if ((uName.equals(userName1)) && (pass.equals(pass1))) {
 					System.out.println("Login successful...!!!");
+					ViewAllProducts prod = new ViewAllProducts();
+					prod.viewAllProducts();
 				} else {
 					System.out.println("User Not Found..!!");
 				}

@@ -21,15 +21,6 @@ public class SelectUser {
 			ResultSet rs = ps.executeQuery();
 			ArrayList<Users> al = new ArrayList<Users>();
 			while (rs.next()) {
-//				System.out.println("User Details Are : ");
-//				System.out.println("First Name : " + rs.getString(2));
-//				System.out.println("Last Name : " + rs.getString(3));
-//				System.out.println("User Name : " + rs.getString(8));
-//				System.out.println("Password : " + rs.getString(4));
-//				System.out.println("City : " + rs.getString(5));
-//				System.out.println("Email Id : " + rs.getString(6));
-//				System.out.println("Mobile Number : " + rs.getString(7));
-
 				Users user = new Users();
 				user.setFirstName(rs.getString(2));
 				user.setLastName(rs.getString(3));
