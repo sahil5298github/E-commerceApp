@@ -26,8 +26,7 @@ public class MainClass {
 			switch (input) {
 			case 1: {
 				System.out.println("Select User Operations");
-				System.out.println(
-						" 1 : User Registration\n 2 : User Login\n 3 : view Products\n 4 : Buy Product\n 5 : View Cart\n 6 : Purchase the item");
+				System.out.println(" 1 : User Registration\n 2 : User Login\n 3 : view Products");
 				int user1 = s.nextInt();
 
 				switch (user1) {
@@ -47,15 +46,6 @@ public class MainClass {
 					System.out.println("Products Details Are : ");
 					ViewAllProducts prod = new ViewAllProducts();
 					prod.viewAllProducts();
-					break;
-				case 4:
-					ViewCard card = new ViewCard();
-					card.viewCardDetails();
-
-					break;
-				case 5:
-					break;
-				case 6:
 					break;
 				default:
 					System.out.println("Inter Valid Input");
